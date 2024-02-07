@@ -21,7 +21,7 @@ namespace ConsoleApp9.Entities
 
         public sealed override double Payment()
         {
-            return ((ValuePerHour * Hours) * 1.10) + AdditionalCharge;
+            return (ValuePerHour * Hours) + (AdditionalCharge * 1.10);
         }
 
         public override string ToString()
